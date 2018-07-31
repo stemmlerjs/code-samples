@@ -64,4 +64,4 @@ You can also reach out to me on social media or via email at khalilstemmler@gmai
 
 [Instagram](https://instagram.com/stemmlerjs)
 
-Thanks!
+Thanks!!
