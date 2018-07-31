@@ -56,8 +56,12 @@ This sample comes from a project that utilizes Redis for JWT authentication and 
 
 If you have any questions or comments, please feel free to leave an issue.
 
-Otherwise, you can reach out to me on social media.
+You can also reach out to me on social media or via email at khalilstemmler@gmail.com.
 
 [Twitter](https://twitter.com/stemmlerjs)
+
 [LinkedIn](https://www.linkedin.com/in/khalilstemmler/)
+
 [Instagram](https://instagram.com/stemmlerjs)
+
+Thanks!
