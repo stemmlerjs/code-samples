@@ -21,9 +21,9 @@ import ResetModal from "./ResetModal";
 const SuccessModal = () => {
   return (
     <div className={styles.innerModalContainer}>
-      <h1>Success!</h1>
-      <div>You've updated your password.</div>
-      <div>You can close this window.</div>
+      <h1>{`Success!`}</h1>
+      <div>{`You've updated your password.`}</div>
+      <div>{`You can close this window.`}</div>
     </div>
   );
 };
@@ -37,7 +37,7 @@ const SuccessModal = () => {
 const InitialModal = props => {
   return (
     <div className={styles.innerModalContainer}>
-      <h1>Change Password</h1>
+      <h1>{`Change Password`}</h1>
       <TextInput
         type="password"
         title="Your current password"
@@ -50,7 +50,7 @@ const InitialModal = props => {
         onClick={props.handleOpenSendPasswordResetCodeModal}
         className={styles.underlineLabel}
       >
-        Forgot?
+          {`Forgot?`}
       </div>
       {props.isSubmitting ? <Loading /> : ""}
       <ErrorMessage text={props.errorMessage} />
