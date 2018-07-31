@@ -1,0 +1,90 @@
+
+/* The container that holds the
+entire modal  */
+
+.modalContainer {
+  
+}
+
+/* The container that actually contains the
+content for this modal  */
+.modalContentContainer {
+  margin: 16px;
+    text-align: left;
+}
+
+.modalContainer h1 {
+  margin: 0;
+}
+
+.modalContentContainer .modal-button-container {
+  display: flex;
+}
+
+.modalContentContainer button {
+  width: 48%;
+}
+
+
+.buttonsContainer {
+      margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.addMoreButton {
+  color: rgb(130, 130, 130);
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 1em;
+    transition: 0.2s ease-in;
+}
+
+.addMoreButton:hover, .addMoreButton:focus, .addMoreButton:active {
+      background: #f7f7f7;
+}
+
+.deleteButtonInitial {
+    color: #ff8484;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 1em;
+    border: solid 1px #ff8484;
+    transition: 0.2s ease-in;
+}
+
+.deleteButtonPost {
+  background: #ff8484 !important;
+  color: white !important;
+}
+
+.deleteButtonInitial:hover, .deleteButton:focus, .deleteButton:active {
+    background: #f83b3b;
+    color: white;
+}
+    
+    
+
+/* Centered Modal  */
+
+.centeredModal {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredModal > div {
+  width: 80%;
+}

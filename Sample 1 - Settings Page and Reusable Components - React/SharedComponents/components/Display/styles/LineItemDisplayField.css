@@ -1,0 +1,18 @@
+.lineItemContainer {
+    padding: 1em;
+    font-size: 15px;
+}
+
+.schoolBodySection {
+      margin-bottom: 1em;
+}
+
+.lineItemContainerTitle {
+  font-weight: bold;
+  color: black;
+}
+
+.lineItemContainerText {
+    color: #828282;
+  font-weight: 300;
+}

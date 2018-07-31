@@ -1,0 +1,380 @@
+
+.cardContainer {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    align-items: flex-start;
+    max-width: 360px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    margin: 11px;
+    min-height: 360px;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 320px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.cardContainer:hover {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.cardTopContainer {
+    padding-top: 11px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.imgContainer {
+    width: 136px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.imgContainer > img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    /* border: solid 2px darkslategrey; */
+}
+
+.cardSectionMain {
+    /* width: 60%; */
+    /* display: inline-block; */
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cardHeaderItemMainText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardHeaderItemSecondaryText {
+        font-size: 14px;
+}
+
+.cardHeaderItemAltItemText {
+    font-size: 13px;
+    color: #808080;
+}
+
+.cardHeaderItemContainer {
+margin-top: 9px;
+    text-align: left;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+
+.cardHeaderItemContainer img {
+        height: 24px;
+    width: 24px;
+}
+
+.cardLocation {
+        font-size: 12px;
+        margin-left:7px;
+}
+
+.cardBottomContainer {
+    text-align: left;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 22px;
+    /* height: 29%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardSectionOne {
+    margin-bottom: 10px;
+        height: 60px;
+}
+
+
+.cardSectionTwo {
+    margin-bottom: 10px;
+        height: 60px;
+}
+
+.cardSectionTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardSectionText {
+    font-size: 15px;
+}
+
+.cardActionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 13px;
+}
+
+.cardActionButtons > button {
+background-color: white;
+    border: none;
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 13px;
+    /* width: 109px; */
+    /* height: 51px; */
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s ease-in;
+    background: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    /* border: solid 1px #3b3bff; */
+}
+
+.cardActionButtons > button:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+.cardActionButtons > button:hover a {
+    color:white;
+}
+
+.rejectedCard {
+    border-top: solid 4px red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.activeCard {
+    border-top: solid 4px #007AC1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.jobTypeText {
+    position: relative;
+    width: 81px;
+    font-size: 13px;
+    top: 11px;
+    left: 7px;
+    color: #949494;
+    height: 0px;
+    text-align: left;
+}
+
+.cardSectionAlt {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    margin-right: 18px;
+    justify-content: space-between;
+   font-size: 14px;
+}
+
+.cardSectionAlt > div {
+        width: 50%;
+    text-align: left;
+        display: flex;
+}
+
+.cardSectionAltItem {
+font-weight: bold;
+}
+
+.cardSectionAltItemContainer {
+
+}
+
+.cardSectionAltItemGrey {
+color: #808080;
+}
+
+.paidContainer {
+        text-align: left;
+    border-right: solid 1px #808080;
+    width: 25%;
+}
+
+.distanceContainer {
+    width: 33%;
+    border-left: solid 1px #808080;
+    padding-left: 9px;
+}
+
+.companyInfoClickContainer {
+    font-size: 13px;
+    color: #4a93c7;
+    padding-left: 12px;
+    padding-top: 23px;
+}
+
+.companyInfo {
+    cursor: pointer;
+    color: #008de0;
+}
+
+.clock {
+    padding-right: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.clock_0_50 {
+    color: #7DD226;
+}
+
+.clock_51_75 {
+    color: #F8E622;
+}
+
+.clock_76_100 {
+    color: #CF0921;
+}
+
+.applicantsContainer {
+    /* margin-top: 26px; */
+    font-size: 14px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.calendarIcon {
+        font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #1e9ae3;
+    padding-right: 10px;
+}
+
+.locationIcon {
+    color: #ea0808;
+    cursor: pointer;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    padding-right: 10px;
+}
+
+.locationIconNoHover {
+        color: #ea0808;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    padding-right: 10px;
+}
+
+.lastThing {
+text-align: left;
+    /* padding-left: 17px; */
+    font-size: 12px;
+    margin-top: 16px;
+    position: relative;
+    top: -10px;
+    padding-bottom: 9px;
+}
+
+.moneyIcon {
+    /* padding-left: 3px; */
+    padding-right: 10px;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #13cf10;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.googleMapsLinkStyle {
+    color: black;
+    transition: 0.4s ease-out;
+    padding-bottom: 1px;
+}
+
+.googleMapsLinkStyle:hover {
+    border-bottom: solid 1px #229fdb;
+}
+
+.altImageContainer {
+    height: 106px;
+    width: 106px;
+    background-color: #dddee0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.altImageContainer > i {
+    font-size: 56px;
+    color: #5396e4;
+    text-align: center;
+}
+
+.hiredCard {
+    border-top: 4px solid #10ff00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.jobTypeContainer {
+    height: 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.jobTypeContainer div {
+    text-align: right;
+    font-size: 13px;
+    font-size: 13px;
+    width: 136px;
+    /* text-align: right; */
+    float: right;
+    /* margin-top: 15px; */
+    position: relative;
+    right: -10px;
+    padding-right: 12px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    /* height: 20px; */
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.locationComponentContainer {
+        font-size: 12px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.jobCardBody {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width:350px) and (max-width: 850px) {
+    .cardContainer {
+        width: 320px;
+    }
+}
+
+@media (max-width: 350px) {
+    .cardContainer {
+        width: 95%;
+    }
+}

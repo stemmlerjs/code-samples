@@ -1,0 +1,57 @@
+.schoolHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em;
+  margin-bottom: 0px;
+  border-bottom: solid 1px #dfdfdf;
+  padding-bottom: 1em;
+      min-height: 112px;
+}
+
+.schoolHeaderContainerNoBorder {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em;
+  margin-bottom: 0px;
+  padding-bottom: 1em;
+      min-height: 112px;
+}
+
+.imageContainer {
+  width: 20%;
+  max-width: 85px;
+  min-width: 70px;
+  padding: 1em;
+}
+
+.schoolHeaderTextContainer {
+  font-size: 15px;
+  margin-left: 1em;
+}
+
+.schoolHeaderSchoolName {
+  font-weight: bold;
+}
+
+.schoolHeaderContainerCurrentYear {
+  color: #828282;
+  font-weight: 300;
+}
+
+.schoolHeaderGradDate {
+  color: #828282;
+  font-weight: 300;
+}
+
+.schoolHeaderGradDate span {
+  font-weight: bold;
+}
+
+.editButton {
+      margin-left: 11px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}

@@ -1,0 +1,539 @@
+pre {
+    white-space: pre-wrap;
+    font-family: Roboto, sans-serif;
+}
+
+.cardModalContainer {
+    display: flex;
+    flex-direction: row;
+    height: 477px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+
+.desiredSkillsTagsContainer {
+    margin-top: 3px;
+}
+
+.skillsTag {
+    font-size: 11px;
+    line-height: 14px;
+    padding: 8px;
+    font-weight: 400;
+    display: inline-block;
+    background-color: #cff0ff;
+    color: #1e9ae3;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.cardLeft {
+  width: 50%;
+}
+
+.cardRight {
+    width: 50%;
+    margin-right: 12px;
+    margin-left: 5px;
+}
+
+.cardLeftTopContainer {
+      display: flex;
+    flex-direction: row;
+    margin-left: 13px;
+}
+
+.imgContainer {
+    width: 136px;
+}
+
+.imgContainer > img {
+    height: 106px;
+    width: 106px;
+}
+
+.cardHeaderContainer {
+        width: 60%;
+    /* display: inline-block; */
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cardHeaderItemMainText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardHeaderItemSecondaryText {
+        font-size: 15px;
+}
+
+.cardHeaderItemAltItemText {
+    font-size: 13px;
+    color: #808080;
+}
+
+.cardHeaderItemContainer {
+    margin-top: 3px;
+    text-align: left;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+}
+
+.cardHeaderItemContainer img {
+    height: 24px;
+    width: 24px;
+}
+
+.cardLocation {
+    font-size: 12px;
+}
+
+.cardBottomContainer {
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 11px;
+    overflow-y: scroll;
+    height: 351px;
+    padding-top: 9px;
+    padding-right: 9px;
+    overflow-x: hidden;
+}
+
+.cardBottomContainer::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgb(221, 222, 224,0.3);
+    border-radius: 10px;
+}
+
+.cardBottomContainer::-webkit-scrollbar {
+	width: 10px;
+}
+
+.cardBottomContainer::-webkit-scrollbar-thumb {
+	background-color: #5396E4;
+    border-radius: 30px;
+}
+
+.cardSectionOne {
+    margin-bottom: 22px;
+}
+
+
+.cardSectionTwo {
+    margin-bottom: 10px;
+        height: 60px;
+}
+
+.cardSectionThree {
+    margin-bottom: 10px;
+        height: 60px;
+}
+
+.cardSectionTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardSectionText {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.cardSectionText pre {
+        margin-top: 3px;
+}
+
+.cardActionButtons {
+display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 13px;
+    position: absolute;
+    right: 19px;
+    bottom: 19px;
+}
+
+.cardActionButtons > button {
+    background-color: white;
+    border: none;
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 13px;
+    /* width: 109px; */
+    /* height: 51px; */
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s ease-in;
+    padding: 10px;
+    border-radius: 2px;
+    margin-left: 10px;
+    
+}
+
+.cardActionButtons > button:hover {
+    background-color: #2196F3;
+    color:white;
+}
+
+.cardActionButtons > button:hover a {
+    color:white;
+}
+
+.questionsContainer {
+    /* position: relative; */
+    /* top: 51px; */
+    text-align: left;
+    font-size: 14px;
+    height: 295px;
+    overflow-y: scroll;
+    max-width: 370px;
+    overflow-x: hidden;
+    height: 343px;
+    font-weight: 300;
+}
+
+.questionsContainer::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgb(221, 222, 224,0.3);
+    border-radius: 10px;
+}
+
+.questionsContainer::-webkit-scrollbar {
+	width: 10px;
+}
+
+.questionsContainer::-webkit-scrollbar-thumb {
+	background-color: #5396E4;
+    border-radius: 30px;
+}
+
+.questionsContainer > div {
+    width: 92%;
+}
+
+.answerTextField {
+    width: 100%;
+    height: 91px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.answerTextFieldReadOnly {
+    width: 100%;
+    height: 91px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    background-color: #fafafa;
+    padding: 8px;
+}
+
+.dateApplied {
+        font-size: 13px;
+}
+
+.statuses {
+font-size: 14px;
+    text-align: left;
+    margin-top: 8px;
+    /* margin-left: 6px; */
+    margin-bottom: 25px;
+}
+
+.statuses > div {
+        padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.statusItem {
+    display: flex;
+        font-weight: normal;
+}
+
+.statusItemRejected {
+     display: flex;
+    border: solid red 2px;
+    padding: 7px;
+}
+
+.statusIcon {
+        width: 13px;
+    height: 13px;
+    background-color: #0d84d9;
+    border-radius: 40px;
+    margin-right: 12px;
+    position: relative;
+    top: 4px;
+}
+
+.statusIconReject {
+            width: 13px;
+    height: 13px;
+    background-color: #d90d0d;
+    border-radius: 40px;
+    margin-right: 12px;
+    position: relative;
+    top: 4px;
+
+}
+
+.notActiveStatusIcon {
+        width: 13px;
+    height: 13px;
+    background-color: #8799a6;
+    border-radius: 40px;
+    margin-right: 12px;
+    position: relative;
+    top: 4px;
+}
+
+.statusText {
+ width: 100%;
+}
+
+.statusHeaderText {
+    color: black;
+    margin-bottom: 4px;
+}
+
+.notActive {
+    opacity: 0.3;
+}
+
+.cardSectionMain {
+        padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.companyInfo {
+    cursor: pointer;
+    color: #008de0;
+}
+
+.clock {
+    padding-right: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.clock_0_50 {
+    color: #7DD226;
+}
+
+.clock_51_75 {
+    color: #F8E622;
+}
+
+.clock_76_100 {
+    color: #CF0921;
+}
+
+.applicantsContainer {
+    /* margin-top: 26px; */
+    font-size: 14px;
+    text-align: left;
+    /* padding-left: 16px; */
+    padding-left: 4px;
+    /* margin-top: 6px; */
+}
+
+.calendar {
+    padding-left: 3px;
+    padding-right: 14px;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #1e9ae3;
+}
+
+.locationPin {
+    padding-left: 5px;
+    padding-right: 17px;
+    font-size: 21px;
+    /* background-color: #7b7bd8; */
+    color: #ea0808;
+    cursor: pointer;
+}
+
+.locationIconNoHover {
+    color: #ea0808;
+    font-size: 17px;
+    padding-right: 17px;
+    padding-left: 6px;
+}
+
+.applicationProgress {
+    display: flex;
+    flex-direction: row;
+}
+
+.googleMapsLinkStyle {
+    color: black;
+    transition: 0.4s ease-out;
+    padding-bottom: 1px;
+}
+
+.googleMapsLinkStyle:hover {
+    border-bottom: solid 1px #229fdb;
+}
+
+.hideDisplay {
+    display: none;
+}
+
+.moneyIcon {
+padding-left: 7px;
+    padding-right: 16px;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #13cf10;
+    padding-top: 2px;
+}
+
+.lastThing {
+text-align: left;
+    /* padding-left: 17px; */
+    font-size: 12px;
+    margin-top: 14px;
+    position: relative;
+    top: -10px;
+    padding-bottom: 0px;
+}
+
+.mobilePadding {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.divider1 {
+        height: 1px;
+    background: #f2f2f2;
+    width: 70%;
+    margin: 0 auto;
+    /* margin-top: 6px; */
+    position: relative;
+    top: 9px;
+}
+
+.smallJobTypeTitle {
+        font-size: 12px;
+}
+
+.datePostedStyle {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 14px;
+    /* margin-right: 27px; */
+    color: #7b7b7b;
+}
+
+@media (max-width: 600px) {
+    .cardModalContainer {
+        display: flex;
+        flex-direction: column;
+        height: 94%;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .cardLeft {
+        width: 100%;
+        height: 85%;
+        overflow-y: hidden;
+        padding-bottom: 40px;
+    }
+
+    .cardRight {
+        width: 100%;
+        margin-right: 12px;
+        margin-left: 5px;
+        height: 15%;
+        padding-top: 11px;
+
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        height: 15%;
+         padding-top: 0px;
+
+    }
+
+    .mobilePadding {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 29px;
+    }
+
+    .cardBottomContainer {
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 11px;
+    overflow-y: scroll;
+    height: 203px;
+    padding-top: 9px;
+    padding-right: 9px;
+    margin-left: 23px;
+    margin-right: 23px;
+    height: 75%;
+    }
+
+    .cardActionButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 13px;
+         position: inherit;
+        right: 19px;
+        bottom: 19px;
+    }
+
+    .questionsContainer {
+        width: 100%;
+        position: inherit;
+        top: 0px;
+        text-align: left;
+        font-size: 14px;
+        height: inherit;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .cardLeftTopContainer {
+        margin-right: 23px;
+        margin-left: 23px;
+        max-height: 109px;
+    }
+    .imgContainer {
+        width: 32%;
+    }
+
+    .imgContainer > img {
+        height: 77px;
+        width: 77px;
+    }
+
+    .cardSectionMain {
+            width: 68%;
+    }
+
+
+}

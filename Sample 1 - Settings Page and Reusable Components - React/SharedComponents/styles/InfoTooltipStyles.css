@@ -1,0 +1,22 @@
+
+.container {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.container img {
+        height: 16px;
+}
+
+.icon {
+    
+}
+
+.tooltipStyle {
+    background: black;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+}

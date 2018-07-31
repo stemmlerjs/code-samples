@@ -1,0 +1,18 @@
+
+@media (min-width: 1000px)  {
+  #modal-container > section > .skylight-dialog {
+    left: 25% !important;
+    right: 25% !important;
+    top: 10% !important;
+    bottom: 10% !important;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 750px) {
+  #modal-container > section > .skylight-dialog {
+    left: 20% !important;
+    right: 20% !important;
+    top: 10% !important;
+    bottom: 10% !important;
+  }
+}

@@ -1,0 +1,187 @@
+
+.jobHeaderContainer {
+    min-height: calc(20vh - 20px)!important;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    top: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    flex-flow: row wrap;
+    margin-top: -1px;
+
+}
+
+
+.centeredJobContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.jobTitle {
+    font-weight: bold;
+    line-height: 1.2em;
+    color: black;
+    margin-left: 20px;
+}
+
+.subTitle {
+    font-size: 17px;
+    color: #d2eaff;
+    padding-top: 18px;
+}
+
+.companyBrandImageContainer {
+    
+}
+
+.companyBrandImage {
+
+    position: relative;
+    margin: -100px 0 0 75px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px #ddd;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    padding: 25px!important;
+    vertical-align: bottom;
+}
+
+.jobHeaderInfo{
+    font-size: 15px;
+    white-space: nowrap
+}
+
+.icons {
+    width: 50px;
+    height: 25px;
+    margin-left: 20%;
+
+  
+}
+
+.iconText {
+    margin-left: 1%;
+    color: black;
+    font-size: 18px;
+    min-width: 101px
+}
+
+.applyHeaderButton {
+    background: #0dd4d2;
+    border: none;
+    border-radius: 60px;
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 22px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin-bottom: 1.45rem;
+}
+
+.applyHeaderButton:hover {
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+    
+}
+
+.jobInfoContainer {
+    min-height: calc(20vh - 20px)!important;
+    width: 100%;
+    color: black;
+}
+
+.jobInfo {
+    margin-right: 8.33333%;
+    margin-left: 8.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+
+}
+
+.jobInfoTitle {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2em 0;
+}
+
+.jobInfoText {
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.jobHeaderIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.iconsInfo {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+}
+
+.buttonContainer {
+    flex: 1 0 0;
+
+}
+
+@media (max-width: 1000px) {
+    .iconsInfo {
+        padding-left: 5%;
+
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .centeredJobContainer {
+        flex-flow: column wrap;
+    }
+
+    .icons {
+        margin-left: 0%;
+    }
+
+    .companyBrandImage {
+        position: relative;
+        margin: -100 0 12 0px;
+        margin-bottom: 12px;
+        margin-left: 0px;
+
+    }
+
+    .jobHeaderIconsContainer {
+        flex-flow: column wrap;
+
+    }
+   
+}

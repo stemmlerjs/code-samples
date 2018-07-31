@@ -1,0 +1,41 @@
+.container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0px;
+  transition: 0.2s ease-in-out;
+  background: #5258f2;
+  z-index: 39;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 35%;
+  padding-right: 35%;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.visible {
+  height: 44px;
+}
+
+.invisible {
+  height: 0px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    top: 55px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

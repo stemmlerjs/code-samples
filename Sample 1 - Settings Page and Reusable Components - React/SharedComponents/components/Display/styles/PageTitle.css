@@ -1,0 +1,22 @@
+
+.pageTitle {
+display: block;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 19px;
+    font-weight: bold;
+    font-size: 27px;
+    color: #3a3a3a;
+    margin-bottom: 18px;
+    transition: 0.2s ease-in-out;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .pageTitle {
+        padding-left: 3%;
+    }
+}

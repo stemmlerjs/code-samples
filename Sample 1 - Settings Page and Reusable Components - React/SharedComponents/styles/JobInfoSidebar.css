@@ -1,0 +1,113 @@
+
+.topContainer {
+    outline: none;
+    display: flex !important;
+    flex-direction: row !important;
+    /* padding: 27px; */
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.imgContainer {
+
+}
+
+.logo {
+width: 109px !important; 
+    border: solid 2px #717070 !important;
+    height: 109px !important;
+    position: relative;
+    width: 32%;
+}
+
+.titleContainer {
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.iconsSectionContainer {
+    display: block;
+    outline: none;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.clock {
+    padding-right: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.clock_0_50 {
+    color: #7DD226;
+}
+
+.clock_51_75 {
+    color: #F8E622;
+}
+
+.clock_76_100 {
+    color: #CF0921;
+}
+
+.applicantsContainer {
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+}
+
+.startDateContainer {
+        font-size: 14px;
+    text-align: left;
+    display: flex;
+}
+
+.paidContainer {
+text-align: left;
+    /* padding-left: 17px; */
+    font-size: 14px;
+    margin-top: 31px;
+    position: relative;
+    top: -10px;
+    /* padding-bottom: 9px; */
+} 
+
+.moneyIcon {
+    padding-left: 3px;
+    padding-right: 14px;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #1e9ae3;
+}
+
+.calendarIcon {
+        font-size: 17px;
+    /* background-color: #7b7bd8; */
+    color: #1e9ae3;
+    padding-right: 10px;
+}
+
+.locationIconNoHover {
+    color: #ea0808;
+    font-size: 17px;
+    /* background-color: #7b7bd8; */
+    padding-right: 14px;
+    padding-left: 3px;
+}
+
+.aboutContainer {
+
+    font-size: 14px;
+}
+
+.aboutText {
+        color: #4d4d4d;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+    height: auto;
+    margin-bottom: 11px;
+}

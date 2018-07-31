@@ -1,0 +1,195 @@
+
+
+/* The components container */
+.cropperContainer, .circleCropperContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    margin: 20px auto;
+}
+
+/* The buttons section */
+.cropperInnerContainer {
+    margin-top: 10px;
+}
+
+#cropperWrapper {
+    height: 250px !important;
+    width: 300px !important;
+    overflow: hidden;
+}
+
+/*important*/
+.cropperImage {
+    max-width: 100% !important; /* Note: This rule is very important (said by documentation) */
+}
+
+/* Cropperjs related css overrides */
+.circleCropperContainer .cropper-view-box,
+.circleCropperContainer .cropper-face {
+    border-radius: 50%;
+}
+
+/* The cropper object's container -- different from .cropperContainer */
+.cropper-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cropper-crop-box {
+    transform: none !important;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+.cropper-view-box {
+    outline: none !important;
+}
+
+/* move the guide lines in a bit to prevent black dots from showing up outside the cricle */
+.cropper-dashed.dashed-v {
+    top: 5%;
+    height: 90%;
+}
+
+.cropper-dashed.dashed-h {
+    left: 5%;
+    width: 90%;
+}
+
+.cropper-wrap-box, .cropper-drag-box {
+    display: none;
+}
+
+/* Crop Button (Save Button) and Cancel Button*/
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.cropButton, .cancelButton {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    /* border: #908f8f 1px solid !important; */
+    padding: 10px 15px 10px 15px;
+    border-radius: 3px;
+    border: 0;
+    background: #3697DB;
+    font-size: 13px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin: 0 auto;
+    width: 150px;
+    outline: none;
+    margin-top: 17px;
+}
+
+.cropButton:hover, .cancelButton {
+  border: #908f8f 1px solid !important;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+  /* transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+  /* padding: 10px 15px 10px 15px; */
+  /* border-radius: 3px; */
+  /* border: 0; */
+  background: #5dade5;
+  /* font-size: 13px; */
+  /* color: white; */
+  /* text-shadow: 1px 1px 0px rgba(0, 0, 0, .1); */
+  /* cursor: pointer; */
+  /* margin: 0 auto; */
+  /* width: 150px; */
+  /* outline: none; */
+  /* margin-top: 17px; */
+}
+
+.cancelButton {
+    background-color: white;
+    color: rgb(107, 107, 107);
+}
+
+.editMessage {
+    color: rgb(158, 161, 195);
+    margin: 5px 0px;
+}
+
+/* slider color:  rgb(107, 107, 107) */
+
+#cropperSlider {
+    -webkit-appearance: none;
+    width: 85%;
+    margin: 14px 0;
+  }
+#cropperSlider:focus {
+    outline: none;
+}
+/* Chrome Slider */
+#cropperSlider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(107, 107, 107);
+}
+
+#cropperSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid rgb(107, 107, 107);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin-top: -14px;
+}
+/* Firefox Slider */
+#cropperSlider::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(107, 107, 107);
+}
+#cropperSlider::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: 3px solid rgb(107, 107, 107);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin-top: -14px;
+}
+/* Edge Slider */
+#cropperSlider::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(107, 107, 107);
+}
+#cropperSlider::-ms-fill-lower {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(107, 107, 107);
+}
+#cropperSlider::-ms-fill-upper {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(107, 107, 107);
+}
+#cropperSlider::-ms-thumb {
+    -webkit-appearance: none;
+    border: 3px solid rgb(107, 107, 107);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin-top: -14px;
+}

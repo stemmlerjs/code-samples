@@ -1,0 +1,114 @@
+
+.logoContainer {
+    height: 20%;
+    overflow: hidden;
+    min-height: 180px;
+}
+
+.logoContainer > img {
+    width: 280px;
+    /* position: relative; */
+    /* top: -23%; */
+    position: relative;
+    /* top: -15%; */
+    top: -20px;
+}
+
+.bodyContainer {
+    background-color: white;
+    text-align: left;
+    padding: 27px;
+    font-size: 15px;
+}
+
+.titleContainer {
+        margin-bottom: 28px;
+}
+
+.aboutContainer {
+
+}
+
+.detailsContainer {
+    margin-bottom: 28px;
+}
+
+.titleText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.altTitleText {
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.aboutTitleText {
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aboutText {
+    color: #4d4d4d;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+    height: auto;
+}
+
+.aboutTextHidden {
+    height: 0px
+}
+
+.expandIconSpan {
+        padding-left: 9px;
+    color: red;
+    font-size: 21px;
+}
+
+.expandIcon {
+    transition: 0.3s ease-out;
+}
+
+.expandIconClosed {
+    transform: rotate(90deg);
+}
+
+.detailItem {
+    display: flex;
+}
+
+.iconContainer {
+    width: 10%;
+    color: #0d8ac6;
+}
+
+.detail {
+    width: 90%;
+}
+
+.detailDivider {
+        padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: solid 1px #cccaca;
+}
+
+.link {
+    color: black;
+}
+.link:visited {
+    color: black;
+}
+
+.efimClass {
+    height: 165px;
+    background-color: #e7eeee;
+    color: #589fce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.efimClass > i {
+    font-size: 82px;
+}

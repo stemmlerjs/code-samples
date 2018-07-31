@@ -1,0 +1,59 @@
+
+.materialStyle {
+    border: #b7b7b7 1px solid !important;
+}
+
+.emailInput {
+    composes: input from "sharedStyles/widgets.css";
+    width: 87%;     /* aligns with textArea better */
+    margin-top:8px; /* remove the margin-top 16 */
+}
+
+.textArea {
+    composes: input from 'sharedStyles/styles.css';
+    height: 97px;
+    resize: none;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.error {
+    border: solid 1px red !important;
+     /* make it glow! */
+      -webkit-box-shadow: 0px 3px 1px red;
+         -moz-box-shadow: 0px 3px 1px red;
+              box-shadow: 0px 3px 1px red; /* some variation of blue for the shadow */
+  }
+
+.flexColumn {
+    display: flex;
+    flex-flow: column !important;
+}
+
+.flexContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 530px;
+    padding: 4%;
+    text-align: left;
+}
+
+.textAreaWidth {
+    width: 100% !important;
+}
+
+.buttonsContainer {
+    width: 100%;
+    text-align: right;
+}
+
+.cancelButton {
+    composes: cancelButton from "sharedStyles/sharedComponentStyles.css";
+}
+
+.confirmButton {
+    composes: confirmButton from "sharedStyles/sharedComponentStyles.css";
+}

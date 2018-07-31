@@ -1,0 +1,17 @@
+link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+style
+  include css/app.css
+body
+  .container
+    .logo-container
+      img(src="https://univjobs.ca/static/u-logo.4bc69dc3.png")
+
+    .container-inner
+      h1.title Hey, #{employerName}
+      p We just wanted to let you know that your job posting "#{jobTitle}" has been approved and is now live in front of students using the Univjobs app.
+      p You'll now be able to start receiving applications from students for this job. Don't forget, you can also search and invite students to apply!
+      a(class='button' href=link) Check it out
+    
+    .footer
+      p Regards,
+      p From Charles and the Univjobs team

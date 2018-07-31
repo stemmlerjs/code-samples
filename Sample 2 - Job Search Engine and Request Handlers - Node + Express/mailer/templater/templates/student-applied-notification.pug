@@ -1,0 +1,17 @@
+link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+style
+  include css/app.css
+body
+  .container
+    .logo-container
+      img(src="https://univjobs.ca/static/u-logo.4bc69dc3.png")
+
+    .container-inner
+      h1.title Hey, #{employerName}
+      p A student, #{studentName}, just applied to your job, "#{jobTitle}". Log into the dashboard to 
+      | review all of your applicants.
+      a(class='button' href=link) View applicant
+    
+    .footer
+      p Cheers,
+      p From Charles and the Univjobs team

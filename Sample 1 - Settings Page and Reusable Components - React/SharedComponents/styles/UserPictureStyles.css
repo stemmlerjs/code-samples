@@ -1,0 +1,15 @@
+
+.altImageContainer {
+    height: 175px;
+    width: 175px;
+    background-color: #dddee0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.altImageContainer > i {
+    font-size: 8vw;
+    color: #5396e4;
+    text-align: center;
+}

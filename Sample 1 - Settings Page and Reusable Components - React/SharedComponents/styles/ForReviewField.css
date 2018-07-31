@@ -1,0 +1,82 @@
+.fieldName {
+    width: 20%;
+    height: 20px;
+    font-size: 18px;
+    color: #52575D;
+    padding: 15px;
+    display:inline-block;
+}
+
+.fieldContent {
+    width: 80%;
+    display:inline;
+}
+
+.flexContainer {
+/* border: 1px solid black; */	
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    align-items: flex-start;
+    list-style-type: none;
+
+    /* For Safari */
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    /* Chrome */
+    display: flex;
+    flex-direction: row;
+}
+
+/* =============== MEDIA QUERIES ============== */
+
+@media (max-width: 400px) {
+    .flexContainer {
+        display: flex;
+        margin: 0;
+        padding: 0px;
+        /* align-items: flex-start; */
+        list-style-type: none;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        display: flex;
+        flex-direction: column;
+            align-items: center;
+        padding-bottom: 17px;
+    }
+    
+    .flexTitle {
+        font-size: 16px;
+        color: black;
+        padding-left: 42px;
+        padding-right: 13px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+    .flexTitle p {
+        margin: 0;
+    }
+
+    .flexContainer li {
+        width: 100%;
+    }
+    .flexContainer div[role="combobox"] {
+        width: 89%;
+            margin-top: 0px;
+    }
+    .flexContainer input[data-thing="input"] {
+        width: 89%;
+    }
+
+    .flexContainer input[type="number"] {
+        width: 89%;
+    }
+
+    .flexContainer textarea[data-thing="input"] {
+        width: 89%;
+    }
+
+}

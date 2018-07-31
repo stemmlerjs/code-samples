@@ -1,0 +1,97 @@
+.backgroundFallback {
+    background: linear-gradient(90deg,#0a26ca,#1ae8e7);
+    min-height: calc(50vh - 50px)!important;
+    background-position: 50% 50%;
+    text-align: center;
+    background-size: cover;
+    margin-top: -1px;
+
+}
+
+/* 
+ Initial swoop  */
+
+.backgroundFallback svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 224px;
+    z-index: 25;
+}
+
+
+/*TODO:
+    Make media queries
+*/
+.hero {
+    min-height: calc(50vh - 50px)!important;
+    width: 100%;
+    background-size: cover;
+    background-position: 25% 10%;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: absolute;
+    padding-top: 10%;
+}
+
+.fixedHero {
+    min-height: calc(50vh - 50px)!important;
+    width: 100%;
+    background-size: cover;
+    background-position: 25% 10%;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: absolute;
+    background-image: linear-gradient(rgba(47, 57, 78, 0.4), rgba(47, 57, 78, 0.8)), url('https://s3.ca-central-1.amazonaws.com/app.univjobs.ca/assets/images/front/business-people-walking.jpg');
+    padding-top: 10%;
+    position: fixed;
+}
+
+
+.centeredHeroContainer {
+    /* padding-top: 40px; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: white;
+text-shadow: 2px 1px #000107;
+}
+
+.subTitle {
+        font-size: 17px;
+    color: #d2eaff;
+    padding-top: 18px;
+}
+
+.employerInfoContainer {
+    width: 100%;
+    background-color: white;
+    min-height: calc(50vh - 50px)!important;
+
+
+}
+
+@media (max-width: 600px) {
+    .centeredHeroContainer {
+        padding-top: 40px;
+    }
+
+    .title {
+            padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 2em;
+    }
+
+}

@@ -1,0 +1,16 @@
+.heartContainer {
+  width: 17%;
+  max-width: 41px;
+}
+
+.heartContainer>i {
+  font-size: 24px;
+}
+
+.heartOn {
+  color: #f21515;
+}
+
+.heartOff {
+  color: #dadada;
+}

@@ -1,0 +1,216 @@
+
+
+  /*
+   * Loading Cards
+   * Source: http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html
+   */
+
+.timelineItem {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 8px;
+    padding: 12px;
+
+    max-width: 472px;
+    min-height: 350px;
+
+    list-style: none;
+    margin-top: 20px;
+    padding: 0px;
+    align-items: flex-start;
+    width: 340px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    min-height: 360px;
+    margin: 11px;
+    width: 360px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animatedBackground {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 741px 59px;
+    height: 290px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 9px;
+} 
+
+.backgroundMasker {
+    background: #fff;
+    position: absolute;
+} 
+
+.headerTop {
+    top: 0;
+    left: 40px;
+    right: 0;
+    height: 27px;
+}
+
+.headerTopHelp {
+    top: 11px;
+    left: 0px;
+    right: 0;
+    height: 16px;
+    width: 41px;
+}
+
+.leftSide {
+        height: 265px;
+    width: 10px;
+    position: relative;
+    top: 27px;
+}
+
+.picHorizontal {
+    width: 249px;
+    height: 25px;
+    position: relative;
+    top: -238px;
+    left: 73px;
+}
+
+.picHorizontalUnder {
+    width: 249px;
+    height: 25px;
+    position: relative;
+    top: -228px;
+    left: 73px;
+}
+
+.picCutthrough {
+    width: 14px;
+    height: 25px;
+    position: relative;
+    top: -268px;
+    left: 73px;
+}
+
+.besideCompany {
+width: 156px;
+    height: 25px;
+    position: relative;
+    top: -297px;
+    left: 167px;
+}
+
+.underPicture {
+width: 313px;
+    height: 12px;
+    position: relative;
+    top: -279px;
+    left: 10px;
+}
+
+.besideTitle {
+    width: 155px;
+    height: 38px;
+    position: relative;
+    top: -279px;
+    left: 167px;
+}
+
+.underTitle {
+    width: 301px;
+    height: 6px;
+    position: relative;
+    top: -297px;
+    left: 10px;
+}
+
+.thingsBeside {
+    width: 207px;
+    height: 33px;
+    position: relative;
+    top: -297px;
+    left: 115px;
+}
+
+.companySide {
+    width: 208px;
+    height: 7px;
+    position: relative;
+    top: -317px;
+    left: 10px;
+}
+
+.thiccpart {
+    width: 311px;
+    height: 16px;
+    position: relative;
+    top: -306px;
+    left: 10px;
+}
+
+.headerBottom,
+.subheaderBottom {
+    top: 0;
+    left: 40px;
+    right: 0;
+    height: 21px;
+} 
+
+.headerLeft {
+        top: 10px;
+    left: 0px;
+    height: 15px;
+    width: 46px;
+}
+
+
+
+.headerRight,
+.subheaderLeft,
+.subheaderRight  {
+   top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+}
+
+.contentTop {
+     top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+} 
+
+.contentFirstEnd {
+
+} 
+
+.contentSecondLine {
+
+} 
+
+.contentSecondEnd {
+
+} 
+
+.contentThirdLine {
+
+} 
+
+.contentThirdEnd {
+
+}

@@ -1,0 +1,65 @@
+
+.container {
+    background: #193CBC;
+    text-align: center;
+    padding: 2em;
+    color: white;
+    padding-bottom: 3em;
+}
+
+.container > h1 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.container > div {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.getStartedButton {
+background: #0dd4d2;
+border: none;
+border-radius: 60px;
+color: white;
+font-size: 20px;
+padding: 4px;
+padding-left: 20px;
+padding-right: 22px;
+ font-weight: 500;
+ transition: 0.2s ease-out;
+font-family: 'Roboto', sans-serif;
+}
+
+.getStartedButton:hover {
+box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.button {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 430px) {
+    .container > h1 {
+         font-size: 1.5em;
+    }
+ 
+    .container > div {
+         font-size: 0.8em;
+     }
+ }
+
+
+@media (max-width: 350px) {
+   .container > h1 {
+        font-size: 1em;
+   }
+
+   .container > div {
+        font-size: 0.5em;
+    }
+}

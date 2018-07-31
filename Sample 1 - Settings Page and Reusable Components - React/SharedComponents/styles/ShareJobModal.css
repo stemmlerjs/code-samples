@@ -1,0 +1,62 @@
+
+.cardModalContainer {
+        display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    align-items: center;
+}
+
+.letFriendsKnow {
+        margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.copyLink {
+        margin-top: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color .1s;
+    width: 359px;
+    font-family: inherit;
+}
+
+.jobTitleLink {
+        font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.jobCompany {
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #3b3b3b;
+}
+
+.visitJobPageLink {
+        margin-top: 22px;
+    color: #0491bb;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .copyLink {
+            margin-top: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color .1s;
+    /* width: 359px; */
+    font-family: inherit;
+    /* max-width: 359px; */
+    width: 86%;
+    }
+}

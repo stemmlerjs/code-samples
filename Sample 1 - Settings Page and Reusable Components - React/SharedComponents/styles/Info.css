@@ -1,0 +1,20 @@
+.container {
+    /* font-weight: 200; */
+    padding: 17px;
+    font-size: 14px;
+    border: solid 1px #69a4ce;
+    margin-top: 11px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+        background-color: #cff0ff;
+    color: #1e9ae3;
+}
+
+.icon {
+    height: 20px;
+    margin-right: 14px;
+}

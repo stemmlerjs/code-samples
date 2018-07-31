@@ -1,0 +1,11 @@
+.calendarContainer {
+    display: flex;
+        margin-bottom: 8px;
+}
+
+.locationIconNoHover {
+    color: #ea0808;
+    font-size: 17px;
+    padding-right: 17px;
+    padding-left: 6px;
+}

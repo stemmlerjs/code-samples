@@ -1,0 +1,140 @@
+.card {
+  display: block;
+  text-align: center;
+  width: 110%;
+  color: #6a7180;
+  background: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.cardContainer {
+  list-style: none;
+  margin: 10px;
+  padding: 0px;
+  align-items: flex-start;
+  width: 360px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cardHeader {
+  height: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 18px;
+  display: flex;
+}
+
+.studentPic {
+  width: 90px;
+  background-color: #DEDFE1;
+  height: 90px;
+  border-radius: 60px;
+}
+
+.studentPicInner {
+  width: 75px;
+  background-color: white;
+  height: 75px;
+  border-radius: 60px;
+  position: relative;
+  left: 2;
+  left: 8px;
+  top: 7px;
+}
+
+.studentDetails {
+  margin: 8px;
+  text-align: left;
+  padding-left: 24px;
+  margin-top: 19px;
+}
+
+.studentName {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.studentMajor {
+  font-size: bold;
+}
+
+.cardDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #9d9fa0;
+  position: relative;
+  left: -8px;
+}
+
+.cardBody {
+  height: 180px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+.institution {
+  background-color: #51A7FA;
+  color: white;
+  width: 180px;
+  height: 26px;
+  border-radius: 2px;
+  position: relative;
+  left: -15px;
+  padding-top: 5px;
+}
+
+.degreeInfo {
+  margin-top: 10px;
+  color: black;
+}
+
+.mainInfoList {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.miscInfoList {
+  text-align: left;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.stDetail {
+  height: 30px;
+  width: 30px;
+  background-color: #51A7FA;
+  border-radius: 40px;
+}
+
+.stDetailValue {
+  padding-left: 5px;
+}
+
+.stDetailInner {
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}

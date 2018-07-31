@@ -1,0 +1,60 @@
+.settingContainer {
+  border: solid 1px #0287d4;
+  border-radius: 6px;
+  box-shadow: 6px 8px 28px rgba(109, 109, 109, 0.3);
+  text-align: left;
+  background: white;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.settingHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-items: center;
+  padding-right: 2em;
+  border-bottom: solid 1px #a0a0a0;
+}
+
+.iconContainer {
+  min-width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer>i {
+  color: #2dc2c5;
+  font-size: 24px;
+}
+
+.headerDetailsContainer {}
+
+.headerTitle {
+  font-size: 21px;
+  font-weight: bold;
+  color: #525252;
+}
+
+.headerDescription {
+  color: #a0a0a0;
+  font-size: 15px;
+}
+
+.settingInputsContainer {
+  padding: 1em;
+}
+
+.textInputClass {
+  margin: 0px;
+  padding: 10
+}
+
+@media (max-width: 600px) {
+  .settingContainer {
+    width: 92%;
+  }
+}

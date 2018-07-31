@@ -1,0 +1,424 @@
+/* Text input  */
+
+.componentContainer {
+  border: solid 1px #dbdbdb;
+  border-radius: 4px;
+}
+
+.textInputContainer {
+  margin-top: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.textInputContainer label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.textInputContainer input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  border: solid 1px #d0d0d0;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 1em;
+  margin-top: 12px;
+}
+
+/* Textarea  */
+
+.textAreaInputContainer {
+  margin-top: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.textAreaInputMaxCharsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textAreaInputMaxCharsContainer label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.textAreaInputContainer label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.textAreaInputContainer textarea {
+  border: solid 1px #d0d0d0;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 1em;
+  margin-top: 12px;
+  min-height: 114px;
+  resize: none;
+  font-family: 'Roboto';
+}
+
+/* Solid button  */
+
+.buttonSolid {
+  color: white;
+  background: #2195D7;
+  border: none;
+  padding: 1em;
+  font-size: 16px;
+  border-radius: 6px;
+  min-width: 6em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+  outline: none;
+}
+
+.buttonSolid:hover {
+  background: #75cdff;
+}
+
+/* button clear cancel  */
+
+.buttonClearCancel {
+  color: #929292;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+  padding: 1em;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.buttonClearCancel:hover {
+  border: solid 1px #c9c9c9;
+}
+
+/* File  */
+
+.fileContainer {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.fileContainer label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.fileName {
+  margin-bottom: 10px;
+}
+
+.inputMenuContainer {
+  cursor: pointer;
+  text-align: right;
+}
+
+.inputMenuContainer>img {
+  width: 23px;
+}
+
+.fileOnFileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.onFile {
+  color: #2195d7;
+  text-decoration: underline;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fileOptionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileOptionsContainer>button {
+  min-width: 100px;
+  height: 36px;
+}
+
+/* Radio buttons  */
+
+.radioButtonsContainer {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.radioButtonsContainer label:nth-of-type(2) {
+  margin-left: 1em;
+}
+
+/* File drop  */
+
+.fileDropContainer {}
+
+.fileDropNotUploaded {
+  color: grey;
+  cursor: pointer;
+}
+
+.inputTitle {}
+
+/*Dropdown  */
+
+.dropdownContainer .dropdownContainer>div {
+  border: solid 1px #d0d0d0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  box-shadow: none;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.dateComponent {
+  display: flex;
+}
+
+.dateComponent label {
+  color: #858585;
+  font-size: 16px;
+}
+
+.dateComponentDropdown {
+  margin-top: 0.5em;
+  max-width: 97%;
+}
+
+/* multiselect  */
+
+.multiSelect {
+  font-size: 15px;
+  margin-top: 1em;
+}
+
+.multiSelect>div {
+  min-height: 60px;
+  padding: 7px;
+}
+
+/* Rich text  */
+
+.textArea {
+  composes: input from 'sharedStyles/styles.css';
+  border: solid 1px #c2c2c2;
+  width: 95%;
+  resize: vertical;
+  overflow: hidden;
+}
+
+.responsibilitiesClass {
+  height: 175px;
+  background: white;
+  padding: 0px !important;
+  resize: vertical;
+  border: solid 1px #c2c2c2;
+  width: 95%;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  text-align: left;
+  padding: .5em 1em;
+  margin: 8px;
+  margin-top: 16px;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+.responsibilitiesClass> :first-child {
+  border: none;
+  border-bottom: solid 1px #c2c2c2 !important;
+}
+
+.responsibilitiesClassError {
+  composes: error from 'sharedStyles/error.css';
+  height: 175px;
+  background: white;
+  padding: 0px !important;
+  resize: vertical;
+  width: 95%;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  text-align: left;
+  padding: .5em 1em;
+  margin: 8px;
+  margin-top: 16px;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+/* Checkboxes  */
+
+.checkboxContainer {
+  color: #3d3d3d;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox {
+  width: 25px;
+  position: relative;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+
+.checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 3px solid #0f97e2;
+  border-radius: 3px;
+}
+
+/**
+ * Display the tick inside the checkbox
+ */
+
+.checkbox label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #0f97e2;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+
+.checkbox label:hover::after {
+  opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+
+.checkbox input[type=checkbox]:checked+label:after {
+  opacity: 1;
+}
+
+.checkboxGroupTitle {
+  margin-bottom: 1em;
+}
+
+.groupContainer {
+  margin-bottom: 2em;
+  max-height: 325px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media (max-width: 450px) {
+  .groupContainer {
+    max-height: unset;
+    display: unset;
+    flex-direction: unset;
+    flex-wrap: unset;
+    align-items: unset;
+  }
+}
+
+/* Flexible buttons classe  */
+
+.buttonBase {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: solid 3px;
+  font-size: 15px;
+  color: #4a4a4a;
+  color: #3d3d3d;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 1em;
+  max-width: 400px;
+}
+
+.normalClear {
+  color: #0f97e2;
+  border-radius: 4px;
+}
+
+.normalClear:hover {
+  background: #0f97e2;
+  border: solid 3px #0f97e2;
+  color: white;
+  border-radius: 4px;
+}
+
+.dangerClear {
+  color: #e7005b;
+  border-radius: 4px;
+}
+
+.dangerClear:hover {
+  background: #e7005b;
+  border: solid 3px #e7005b;
+  color: white;
+  border-radius: 4px;
+}
+
+.dangerBold {
+  background: #e7005b;
+  border: solid 3px #e7005b;
+  color: white;
+  border-radius: 4px;
+}
+
+.dangerBold:hover {
+  border: solid 3px #b2064a;
+  background: #b2064a;
+}

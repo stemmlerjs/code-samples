@@ -1,0 +1,16 @@
+link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+style
+  include css/app.css
+body
+  .container
+    .logo-container
+      img(src="https://univjobs.ca/static/u-logo.4bc69dc3.png")
+
+    .container-inner
+      h1.title Hey, #{studentName}
+      p Congrats! You've been personally invited to apply to the "#{jobTitle}" position at #{companyName}.
+      a(class='button' href=link) Apply now
+    
+    .footer
+      p Regards,
+      p Charles @ Univjobs

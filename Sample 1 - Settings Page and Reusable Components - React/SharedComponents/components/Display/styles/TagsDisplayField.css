@@ -1,0 +1,42 @@
+
+.title {
+      font-weight: bold;
+    font-size: 15px;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.tag {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #cff0ff;
+    color: #004c79;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.tagsContainer {
+    /* margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; */
+    padding: 1em;
+}
+
+.header {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.placeholder {
+    padding: 1em;
+    font-size: 14px;
+    /* font-style: italic; */
+    color: #b3b3b3;
+}

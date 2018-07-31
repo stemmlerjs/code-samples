@@ -1,0 +1,344 @@
+/*NOTE:
+ *  - Media queries found below
+ *  - New code has not been tested using Safari or Edge
+ *  - Porting from index to specific component not been tested
+ *  - CSS modules id's are unknown to me  at this moment
+ *
+ *  */
+
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transition: 0.7s;
+    background: -webkit-linear-gradient(left, #152ebe, #00e7e5);
+    background: -moz-linear-gradient(left, #152ebe, #00e7e5);
+    background: -o-linear-gradient(left, #152ebe, #00e7e5);
+    background: linear-gradient(to right, #152ebe, #00e7e5);
+}
+
+
+.headerContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerItem {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.btn {
+    /*position:relative;
+    width:100%;*/
+    padding: 10px 15px 10px 15px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    font-size: 1.0em;
+    color: #229AD6;
+    cursor: pointer;
+}
+
+.btnBlue {
+    padding: 10px 15px 10px 15px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #229AD6;
+    background-color: white;
+    font-size: 1.0em;
+    color: white;
+    cursor: pointer;
+}
+
+.btnBabyBlue {
+    padding: 10px 15px 10px 15px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #3697DB;
+    background-color: #3697DB;
+    font-size: 1.0em;
+    color: white;
+    cursor: pointer;
+}
+.btn:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+.pseudoBtn {
+  cursor: pointer;
+  bottom: 1px solid white;
+}
+
+.pseudoBtn:hover {
+  border-bottom: 1px solid white;
+  transition: 0.5s ease-in-out;
+}
+
+.loginIcon {
+  font-size:30px;
+}
+
+.input {
+    width: 47%;
+    text-align: left;
+    padding: .5em 1em;
+    margin: 8px;
+    margin-top: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    min-height: 37px;
+}
+
+.noDeco {
+    text-decoration: none;
+}
+
+.logoText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 27px;
+    border: solid white 1px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.navItem {
+    margin: 1em;
+    color: #fff ;
+}
+
+
+.univjobsLogo {
+    height: 72px;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.globalDropdown {}
+
+.dropDownToggleButton {}
+
+.dropDownMenu {}
+
+
+
+/* ===========================================Media Queiries===================================*/
+/*  TIDBIT: Best advice for responsive web, start with the small screen and work your way up.
+ *
+ *
+ * */
+
+@media (min-width: 436px) {
+    .globalDropdown {
+        display: none;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .dropDownMenu {
+        display: none;
+        height: 0px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        min-height: 23px;
+        transition: min-height 0.3s;
+        background-color: #52A7FA;
+        
+    }
+
+    .headerContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .headerItem {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+    
+    
+    .univjobsLogo {
+        height: 72px;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+
+    /* These two buttons should be inside a dropdown when the screen is this small. */
+    .navItem {
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+        display:none;
+    }
+
+    .pseudoBtn {
+        display: none;
+        color: white;
+        outline: 0;
+        text-decoration: none;
+        transition: 0.7s;
+        background-color: transparent;
+    }
+    
+    /* Instead, we should be looking at a dropdown */
+
+    .globalDropdown {
+        margin-right: 22px;
+        color: white;
+    }
+
+    .globalDropdown i {
+        font-size: 23px;
+        cursor:pointer;
+        padding: 7px;
+    }
+
+    .globalDropdown i:active {
+        font-size: 23px;
+        cursor:pointer;
+        padding: 7px;
+        background-color: #3c9af7;
+    }
+
+    .dropDownMenu {
+        display: block;
+        position: absolute;
+        /* width: 100%; */
+        /* top: 100%; */
+        /* left: 0; */
+        z-index: 9;
+        min-width: 208px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 8px 0;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transform: translateY(-10px);
+        visibility: hidden;
+        transition-property: opacity, transform, visibility;
+        transition-duration: 70ms, 250ms, 250ms;
+        transition-timing-function: linear,cubic-bezier(0.23, 1, 0.32, 1);
+        transition-delay: 25ms, 50ms, 0ms;
+        display: block;
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 100ms, 150ms, 25ms;
+        transition-delay: 35ms, 50ms, 25ms;
+        box-sizing: border-box;
+        right: 13px;
+        width: 49px;
+    }
+
+    .hidden {
+        opacity: 0;
+        transform: translateY(0);
+        transition-duration: 100ms, 150ms, 25ms;
+        transition-delay: 35ms, 50ms, 25ms;
+        height: 0px;
+            overflow: hidden;
+    }
+
+    .dropDownMenu ul {
+        text-align: left;
+        list-style: none;
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 5px;
+        margin-bottom: -6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .dropDownMenu ul:active {
+        text-align: left;
+        list-style: none;
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 5px;
+        margin-bottom: -6px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #fbfbfb;
+    }
+
+    .dropDownMenu li {
+        margin-bottom: 7px;
+        /* color: black; */
+        padding-bottom: 10px;
+    }
+
+    .border {
+        border-bottom: solid 1px #eae6e6;
+    }
+    
+}
+
+.burgerMenuDropdown {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.2s all;
+    overflow: hidden;
+    height: 135px;
+}
+
+.burgerMenuClosed {
+    height: 0px;
+}
+
+.burgerMenuDropdown ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.burgerMenuDropdown li {
+ padding-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-left: 32px;
+    margin-right: 30px;
+    padding-top: 15px;
+}
